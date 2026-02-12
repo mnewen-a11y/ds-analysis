@@ -4,10 +4,10 @@
   "description": "Design System for Multi-Purpose Quality Analysis Platform",
   "private": true,
   "scripts": {
-    "dev": "storybook dev -p 6006",
-    "build": "storybook build",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "NODE_OPTIONS=--openssl-legacy-provider storybook build -o storybook-static"
+    "dev": "npx storybook dev -p 6006",
+    "build": "npx storybook build",
+    "storybook": "npx storybook dev -p 6006",
+    "build-storybook": "npx storybook build"
   },
   "dependencies": {
     "react": "^18.2.0",
