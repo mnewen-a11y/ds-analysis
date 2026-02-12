@@ -1,0 +1,130 @@
+.button {
+  /* Base styles */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-sans, 'Inter', system-ui, sans-serif);
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  white-space: nowrap;
+  
+  /* Accessibility - Minimum touch target */
+  min-height: 44px;
+  min-width: 44px;
+  
+  /* Default border radius */
+  border-radius: 8px;
+}
+
+/* Focus state - WCAG 2.1 compliant */
+.button:focus-visible {
+  outline: 2px solid var(--color-primary, #3b82f6);
+  outline-offset: 2px;
+}
+
+/* Disabled state */
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* ========================================
+   VARIANTS
+   ======================================== */
+
+/* Primary - Main actions */
+.primary {
+  background-color: var(--color-primary, #3b82f6);
+  color: var(--color-on-primary, #ffffff);
+  padding: 12px 24px;
+}
+
+.primary:hover:not(:disabled) {
+  background-color: var(--color-primary-hover, #2563eb);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);
+}
+
+.primary:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+}
+
+/* Secondary - Alternative actions */
+.secondary {
+  background-color: transparent;
+  color: var(--color-primary, #3b82f6);
+  border: 1px solid var(--color-primary, #3b82f6);
+  padding: 12px 24px;
+}
+
+.secondary:hover:not(:disabled) {
+  background-color: var(--color-primary-50, #eff6ff);
+  transform: translateY(-1px);
+}
+
+.secondary:active:not(:disabled) {
+  background-color: var(--color-primary-100, #dbeafe);
+  transform: translateY(0);
+}
+
+/* Tertiary - Subtle actions */
+.tertiary {
+  background-color: transparent;
+  color: var(--color-text-secondary, #525252);
+  padding: 8px 16px;
+}
+
+.tertiary:hover:not(:disabled) {
+  background-color: var(--color-neutral-100, #f5f5f5);
+}
+
+.tertiary:active:not(:disabled) {
+  background-color: var(--color-neutral-200, #e5e5e5);
+}
+
+/* ========================================
+   SIZES
+   ======================================== */
+
+.sm {
+  font-size: 0.875rem;
+  padding: 8px 16px;
+  min-height: 36px;
+}
+
+.md {
+  font-size: 1rem;
+  padding: 12px 24px;
+  min-height: 44px;
+}
+
+.lg {
+  font-size: 1.125rem;
+  padding: 16px 32px;
+  min-height: 52px;
+}
+
+/* ========================================
+   MODIFIERS
+   ======================================== */
+
+.fullWidth {
+  width: 100%;
+}
+
+/* Icon styling */
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  display: inline-block;
+}

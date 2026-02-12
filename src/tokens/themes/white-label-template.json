@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "name": "White Label Template",
+    "description": "Template for client-specific theming",
+    "version": "1.0.0"
+  },
+  "brand": {
+    "name": "CLIENT_NAME",
+    "tagline": "CLIENT_TAGLINE",
+    "logoUrl": "/logos/CLIENT_LOGO.svg"
+  },
+  "colors": {
+    "primary": "#CUSTOM_PRIMARY_COLOR",
+    "primaryHover": "#CUSTOM_PRIMARY_HOVER",
+    "primaryActive": "#CUSTOM_PRIMARY_ACTIVE",
+    "onPrimary": "#ffffff"
+  },
+  "typography": {
+    "fontFamily": "CUSTOM_FONT, -apple-system, sans-serif",
+    "headingWeight": 600,
+    "bodyWeight": 400
+  },
+  "voice": {
+    "formality": "formal",
+    "locale": "de_DE",
+    "tone": "berater",
+    "examples": {
+      "greeting": "CUSTOM_GREETING",
+      "success": "CUSTOM_SUCCESS_MESSAGE",
+      "error": "CUSTOM_ERROR_MESSAGE"
+    }
+  },
+  "components": {
+    "button": {
+      "borderRadius": "8px",
+      "minHeight": "44px"
+    },
+    "card": {
+      "borderRadius": "12px",
+      "padding": "24px"
+    }
+  },
+  "whiteLabel": {
+    "removePoweredBy": true,
+    "customDomain": "CLIENT_DOMAIN",
+    "customFavicon": "/favicons/CLIENT_FAVICON.ico"
+  }
+}

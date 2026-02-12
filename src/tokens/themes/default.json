@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "name": "Default Theme",
+    "description": "Professional analysis platform - default branding",
+    "version": "1.0.0"
+  },
+  "brand": {
+    "name": "Analysis Platform",
+    "tagline": "Professionell. Vertrauenswürdig. Klar.",
+    "logoUrl": "/logos/default.svg"
+  },
+  "colors": {
+    "primary": "#3b82f6",
+    "primaryHover": "#2563eb",
+    "primaryActive": "#1d4ed8",
+    "onPrimary": "#ffffff"
+  },
+  "typography": {
+    "fontFamily": "Inter, -apple-system, sans-serif",
+    "headingWeight": 600,
+    "bodyWeight": 400
+  },
+  "voice": {
+    "formality": "formal",
+    "locale": "de_DE",
+    "tone": "berater",
+    "examples": {
+      "greeting": "Willkommen im Analysis Tool",
+      "success": "Die Analyse wurde erfolgreich abgeschlossen",
+      "error": "Bei der Analyse ist ein Fehler aufgetreten"
+    }
+  },
+  "components": {
+    "button": {
+      "borderRadius": "8px",
+      "minHeight": "44px"
+    },
+    "card": {
+      "borderRadius": "12px",
+      "padding": "24px"
+    }
+  }
+}
