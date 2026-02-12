@@ -15,6 +15,7 @@
     "lucide-react": "^0.263.1"
   },
   "devDependencies": {
+    "storybook": "^7.6.10",
     "@storybook/cli": "^7.6.10",
     "@storybook/react": "^7.6.10",
     "@storybook/react-vite": "^7.6.10",
